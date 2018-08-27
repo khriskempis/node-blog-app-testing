@@ -1,4 +1,11 @@
 language: node_js
 node_js: node
 services:
-  - mongodb
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: ACcWZWxLJjTOJuqQhS5n7WrICKxxZ+A6b/0kWnMw+JGU706MgCLAS0wqaU8eX357/7k7109+ADDS4KHeG5d0N3/oGMdDDF/lQ118snLfu8Gdo/Nob+NoBSf+2O+TPviJGLB/z/RUCD1Zj0gk9bwDzbr8wKi5XinH+XKDvLW6oxvyZRBEVv/iqxUH9JQlqqjNdObeD7xsc5wOlQQDS6fPEkVEDg78zAAgRoSqt43xJmF86Hi88QlgCi9ANa9B+qMMrGWK50s25OPr/12cHNpvNIo1cbtIKmtpSTYIpQVqxe97srGi3LkLMuhJa6gdWKmTmGVaJY3eCmQCTcZsDciIOa/NZ8WMGRjfHIRiFS8ia3vyvmr4TjOLkb+P4It0xFKr6LkaanvmLrJtqAXI24fLVvsBVMF55HoLQT+xoWMlm/SPT0QIWQAQaHXq8MM5tUwElteg5F4c5OMvPuZN5vLK21AxBSf+5ZowJH+xWfYQ47bXc9k5VGoUf9yiNPMM9jYAtT3sPpSskH3ZzWt+RqWbqmONIOJ1qBqOmj/OXvKvy/7j1fRdSCNjuCiRN5tHcs03wJbvyEilLHbodxmzj73jJDRKfxeuOjVYgdGCMMWlP6FBHz1Ks7IFiODJ9Xu1Bn02Y8tsLXWs/kAhNRhhVAPnPDM4BBJkfM6rR221q/mSgws=
+  app: https://quiet-thicket-69428.herokuapp.com/
+  on:
+    repo: khriskempis/node-blog-app-testing
